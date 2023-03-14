@@ -1,2 +1,2 @@
 #!/bin/bash
-BEST="School"; echo "The value of BEST is $BEST"
+echo "BEST='School'" | tee -a ~/.bashrc > /dev/null && source ~/.bashrc && echo "The value of BEST is $BEST"
