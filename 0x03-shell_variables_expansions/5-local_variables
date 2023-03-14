@@ -1,0 +1,2 @@
+#!/bin/bash
+(set | grep '^[[:alpha:]]*='); echo; printenv; echo; declare -F | cut -f3 -d' '
