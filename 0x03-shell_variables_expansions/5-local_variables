@@ -1,2 +1,2 @@
 #!/bin/bash
-(set | grep '^[[:alpha:]]*=' | cat - <(printf "\n") <(printenv) <(printf "\n") <(declare -F | awk '{print $3}')) | cat
+set
