@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "BEST='School'" | tee -a ~/.bashrc > /dev/null && source ~/.bashrc && echo "The value of BEST is $BEST"
+echo "BEST='School'" > /tmp/best.txt; echo "source ~/.bashrc" >> /tmp/best.txt; echo "echo 'The value of BEST is \$BEST'" >> /tmp/best.txt; cat /tmp/best.txt | tee -a ~/.bashrc > /dev/null; . ~/.bashrc
