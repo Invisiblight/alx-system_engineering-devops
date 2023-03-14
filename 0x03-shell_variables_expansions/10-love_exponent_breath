@@ -1,2 +1,3 @@
 #!/bin/bash
-echo $(bc <<< "scale=2"$'\n'"$BREATH^$LOVE")
+printf "%.2f\n" $(echo "$BREATH^$LOVE"
+		  
