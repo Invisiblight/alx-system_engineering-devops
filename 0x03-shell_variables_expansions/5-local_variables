@@ -1,2 +1,2 @@
 #!/bin/bash
-(set | grep '^[[:alpha:]]*='); echo; printenv; echo; declare -F | cut -f3 -d' '
+(set | grep '^[[:alpha:]]*=') echo $'\n' $(printenv) echo $'\n' $(declare -F | awk '{print $3}')
